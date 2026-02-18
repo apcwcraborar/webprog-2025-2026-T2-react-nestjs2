@@ -4,8 +4,8 @@ import { createClient } from '@supabase/supabase-js';
 @Injectable()
 export class GuestbookService {
   private supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_KEY
+    process.env.SUPABASE_URL="https://pupxzycylidhocphtovu.supabase.co",
+    process.env.SUPABASE_KEY="sb_publishable_zFajJ6ilBmXb6DC9BkBwgA_YXlEd_Yv"
   );
 
   async findAll() { 
